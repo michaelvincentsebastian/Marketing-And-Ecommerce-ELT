@@ -1,0 +1,8 @@
+2025-12-11 22:01:25,403 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'../dataLakehouse/catalog.ducklake'} (connection.py:492)
+2025-12-11 22:01:25,492 - MainThread - sqlmesh.core.config.connection - INFO - Using existing DuckDB adapter due to overlapping data file: ../dataLakehouse/catalog.ducklake (connection.py:482)
+2025-12-11 22:01:25,862 - ThreadPoolExecutor-0_0 - sqlmesh.core.console - WARNING - Unable to get schema for '"lakehouse"."raw"."events"': 'Catalog Error: Table with name events does not exist!
+Did you mean "sqlmesh._environment_statements"?
+
+LINE 1: DESCRIBE "lakehouse"."raw"."events"
+                 ^'. (console.py:2335)
+2025-12-11 22:01:25,877 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)
