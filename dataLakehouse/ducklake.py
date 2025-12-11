@@ -2,7 +2,6 @@
 # Library Setup
 # -------------
 
-import os
 import duckdb
 import boto3
 
