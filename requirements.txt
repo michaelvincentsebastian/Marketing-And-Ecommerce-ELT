@@ -1,3 +1,4 @@
 duckdb
 boto3
 sqlmesh
+venv # For isolating SQLMesh Environment & Dependencies
