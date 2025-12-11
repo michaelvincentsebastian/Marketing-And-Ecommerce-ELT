@@ -21,7 +21,7 @@ con.sql("INSTALL ducklake; LOAD ducklake;")
 minioAuth = {
     'accessKey': 'minioadmin',
     'secretKey': 'miniopassword',
-    'bucket': 'elt-dapodik',
+    'bucket': 'marketing-and-ecommerce',
     'endpoint': 'http://localhost:9000'
 }
 
@@ -48,16 +48,16 @@ s3_client = boto3.client(
 try:
     # Jika sudah ada
     s3_client.head_bucket(Bucket = minioAuth['bucket'])
-    print(f"Bucket '{minioAuth['bucket']}' already exists.")
+    print(f"✅ Bucket '{minioAuth['bucket']}' already exists. \n")
     
 except Exception as e:
     # Jika bucket not found / 404 -> buat bucket baru
     if '404' in str(e):
             s3_client.create_bucket(Bucket = minioAuth['bucket'])
-            print(f"Bucket '{minioAuth['bucket']}' created successfully.") 
+            print(f"✅ Bucket '{minioAuth['bucket']}' created successfully. \n") 
     # Jika error bukan not found / 404 (artinya ada kesalahan lain, biasanya salah endpoint api)
     else:
-        print(f"An error occurred while checking/creating the bucket: {e}")
+        print(f"❌ An error occurred while checking/creating the bucket: {e} \n")
         
 # --------------------------
 # Setup Target Raw File Path
@@ -69,13 +69,11 @@ catalogMetadata = './dataLakehouse/catalog.ducklake'
 managedStoredData = f"s3://{minioAuth['bucket']}/ducklake/"
 # File Path untuk Raw data yang akan dikelola
 localRawDataPath = {
-    'kemendikdasmen': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Kemendikdasmen_Sekolah di Indonesia.csv',
-    'jakarta': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Exercise_Data_Sekolah/rawData/Dapodik_DKI Jakarta.csv',
-    'bekasi': r'B:/GitHub Repository/Scraping-Dapodik-Data/result/data_Bekasi.csv',
-    'depok': r'B:/GitHub Repository/Scraping-Dapodik-Data/result/data_Depok.csv',
-    'balikpapan': r'B:/GitHub Repository/Scraping-Dapodik-Data/result/data_Balikpapan.csv',
-    'makassar': r'B:/GitHub Repository/Scraping-Dapodik-Data/result/data_Makassar.csv',
-    'palembang': r'B:/GitHub Repository/Scraping-Dapodik-Data/result/data_Palembang.csv'
+    'campaigns': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Marketing & E-Commerce Analytics/rawData/campaigns.csv',
+    'customers': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Marketing & E-Commerce Analytics/rawData/customers.csv',
+    'events': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Marketing & E-Commerce Analytics/rawData/events.csv',
+    'products': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Marketing & E-Commerce Analytics/rawData/products.csv',
+    'transactions': r'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Marketing & E-Commerce Analytics/rawData/transactions.csv'
 }
 
 # ---------------
@@ -90,44 +88,34 @@ con.sql("USE dataLakehouse;")
 con.sql("CREATE SCHEMA IF NOT EXISTS raw;")
 
 # Variable Load Data
-loadKemendikdasmen = f"""
-        CREATE OR REPLACE TABLE raw.dataKemendikdasmen AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['kemendikdasmen']}');
+loadCampaign = f"""
+        CREATE OR REPLACE TABLE raw.campaigns AS 
+        SELECT * FROM read_csv_auto('{localRawDataPath['campaigns']}');
     """
-loadJakarta = f"""
-        CREATE OR REPLACE TABLE raw.dataJakarta AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['jakarta']}');
+loadCustomer = f"""
+        CREATE OR REPLACE TABLE raw.customers AS 
+        SELECT * FROM read_csv_auto('{localRawDataPath['customers']}');
     """
-loadBekasi = f"""
-        CREATE OR REPLACE TABLE raw.dataBekasi AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['bekasi']}');
+loadEvents = f"""
+        CREATE OR REPLACE TABLE raw.events AS 
+        SELECT * FROM read_csv_auto('{localRawDataPath['events']}');
     """
-loadDepok = f"""
-        CREATE OR REPLACE TABLE raw.dataDepok AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['depok']}');
+loadProduct = f"""
+        CREATE OR REPLACE TABLE raw.products AS 
+        SELECT * FROM read_csv_auto('{localRawDataPath['products']}');
     """
-loadBalikpapan = f"""
-        CREATE OR REPLACE TABLE raw.dataBalikpapan AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['balikpapan']}');
-    """
-loadMakassar = f"""
-        CREATE OR REPLACE TABLE raw.dataMakassar AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['makassar']}');
-    """
-loadPalembang = f"""
-        CREATE OR REPLACE TABLE raw.dataPalembang AS 
-        SELECT * FROM read_csv_auto('{localRawDataPath['palembang']}');
+loadTransaction = f"""
+        CREATE OR REPLACE TABLE raw.transactions AS 
+        SELECT * FROM read_csv_auto('{localRawDataPath['transactions']}');
     """
     
 # Load Datanya
 try:
-    con.sql(loadKemendikdasmen)
-    con.sql(loadJakarta)
-    con.sql(loadBekasi)
-    con.sql(loadDepok)
-    con.sql(loadBalikpapan)
-    con.sql(loadMakassar)
-    con.sql(loadPalembang)
+    con.sql(loadCustomer)
+    con.sql(loadCampaign)
+    con.sql(loadEvents)
+    con.sql(loadProduct)
+    con.sql(loadTransaction)
     print(f"✅ Semua tabel raw terdaftar.")
 
 except Exception as e:
