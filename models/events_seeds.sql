@@ -2,7 +2,7 @@ MODEL (
   name datamarketingseeds.events,
 
   kind SEED (
-    path '../seeds/events.csv'
+    path 'C:/Users/Asus/Downloads/Data Andalan Utama (Intern)/Marketing & E-Commerce Analytics/rawData/events.csv'
   ),
 
   columns (
