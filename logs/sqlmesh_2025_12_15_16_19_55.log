@@ -1,0 +1,251 @@
+2025-12-15 16:19:56,716 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'./datastore.duckdb'} (connection.py:492)
+2025-12-15 16:20:04,440 - MainThread - sqlmesh.core.config.connection - INFO - Using existing DuckDB adapter due to overlapping data file: ./datastore.duckdb (connection.py:482)
+2025-12-15 16:20:04,601 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0000_baseline' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0000_baseline.py'> (migrator.py:185)
+2025-12-15 16:20:04,661 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0061_mysql_fix_blob_text_type' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0061_mysql_fix_blob_text_type.py'> (migrator.py:185)
+2025-12-15 16:20:04,661 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0062_add_model_gateway' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0062_add_model_gateway.py'> (migrator.py:185)
+2025-12-15 16:20:04,661 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0063_change_signals' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0063_change_signals.py'> (migrator.py:185)
+2025-12-15 16:20:04,661 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0064_join_when_matched_strings' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0064_join_when_matched_strings.py'> (migrator.py:185)
+2025-12-15 16:20:04,662 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0065_add_model_optimize' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0065_add_model_optimize.py'> (migrator.py:185)
+2025-12-15 16:20:04,662 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0066_add_auto_restatements' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0066_add_auto_restatements.py'> (migrator.py:185)
+2025-12-15 16:20:04,674 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0067_add_tsql_date_full_precision' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0067_add_tsql_date_full_precision.py'> (migrator.py:185)
+2025-12-15 16:20:04,674 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0068_include_unrendered_query_in_metadata_hash' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0068_include_unrendered_query_in_metadata_hash.py'> (migrator.py:185)
+2025-12-15 16:20:04,674 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0069_update_dev_table_suffix' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0069_update_dev_table_suffix.py'> (migrator.py:185)
+2025-12-15 16:20:04,674 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0070_include_grains_in_metadata_hash' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0070_include_grains_in_metadata_hash.py'> (migrator.py:185)
+2025-12-15 16:20:04,674 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0071_add_dev_version_to_intervals' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0071_add_dev_version_to_intervals.py'> (migrator.py:185)
+2025-12-15 16:20:04,678 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0072_add_environment_statements' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0072_add_environment_statements.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0073_remove_symbolic_disable_restatement' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0073_remove_symbolic_disable_restatement.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0074_add_partition_by_time_column_property' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0074_add_partition_by_time_column_property.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0075_remove_validate_query' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0075_remove_validate_query.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0076_add_cron_tz' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0076_add_cron_tz.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0077_fix_column_type_hash_calculation' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0077_fix_column_type_hash_calculation.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0078_warn_if_non_migratable_python_env' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0078_warn_if_non_migratable_python_env.py'> (migrator.py:185)
+2025-12-15 16:20:04,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0079_add_gateway_managed_property' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0079_add_gateway_managed_property.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0080_add_batch_size_to_scd_type_2_models' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0080_add_batch_size_to_scd_type_2_models.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0081_update_partitioned_by' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0081_update_partitioned_by.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0082_warn_if_incorrectly_duplicated_statements' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0082_warn_if_incorrectly_duplicated_statements.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0083_use_sql_for_scd_time_data_type_data_hash' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0083_use_sql_for_scd_time_data_type_data_hash.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0084_normalize_quote_when_matched_and_merge_filter' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0084_normalize_quote_when_matched_and_merge_filter.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0085_deterministic_repr' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0085_deterministic_repr.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0086_check_deterministic_bug' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0086_check_deterministic_bug.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0087_normalize_blueprint_variables' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0087_normalize_blueprint_variables.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0088_warn_about_variable_python_env_diffs' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0088_warn_about_variable_python_env_diffs.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0089_add_virtual_environment_mode' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0089_add_virtual_environment_mode.py'> (migrator.py:185)
+2025-12-15 16:20:04,691 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0090_add_forward_only_column' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0090_add_forward_only_column.py'> (migrator.py:185)
+2025-12-15 16:20:04,694 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0091_on_additive_change' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0091_on_additive_change.py'> (migrator.py:185)
+2025-12-15 16:20:04,694 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0092_warn_about_dbt_data_type_diff' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0092_warn_about_dbt_data_type_diff.py'> (migrator.py:185)
+2025-12-15 16:20:04,694 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0093_use_raw_sql_in_fingerprint' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0093_use_raw_sql_in_fingerprint.py'> (migrator.py:185)
+2025-12-15 16:20:04,694 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0094_add_dev_version_and_fingerprint_columns' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0094_add_dev_version_and_fingerprint_columns.py'> (migrator.py:185)
+2025-12-15 16:20:04,700 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0095_warn_about_dbt_raw_sql_diff' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0095_warn_about_dbt_raw_sql_diff.py'> (migrator.py:185)
+2025-12-15 16:20:04,700 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0096_remove_plan_dags_table' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0096_remove_plan_dags_table.py'> (migrator.py:185)
+2025-12-15 16:20:04,702 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0097_add_dbt_name_in_node' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0097_add_dbt_name_in_node.py'> (migrator.py:185)
+2025-12-15 16:20:04,702 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0098_add_dbt_node_info_in_node' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0098_add_dbt_node_info_in_node.py'> (migrator.py:185)
+2025-12-15 16:20:04,702 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0099_add_last_altered_to_intervals' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0099_add_last_altered_to_intervals.py'> (migrator.py:185)
+2025-12-15 16:20:04,705 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0100_add_grants_and_grants_target_layer' from 'B:\\GitHub Repository\\Marketing-And-Ecommerce-ELT\\.venv\\Lib\\site-packages\\sqlmesh\\migrations\\v0100_add_grants_and_grants_target_layer.py'> (migrator.py:185)
+2025-12-15 16:20:04,711 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Fetching environments (migrator.py:207)
+2025-12-15 16:20:04,713 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Migrating snapshot rows... (migrator.py:224)
+2025-12-15 16:20:04,716 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - No changes to snapshots detected (migrator.py:217)
+2025-12-15 16:20:16,469 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage CreateSnapshotRecordsStage (evaluator.py:123)
+2025-12-15 16:20:16,521 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage PhysicalLayerSchemaCreationStage (evaluator.py:123)
+2025-12-15 16:20:16,525 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating schema 'datastore.sqlmesh__datamodelling' (evaluator.py:1449)
+2025-12-15 16:20:16,526 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE SCHEMA IF NOT EXISTS "datastore"."sqlmesh__datamodelling" (base.py:2619)
+2025-12-15 16:20:16,528 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating schema 'datastore.sqlmesh__datamarketingclean' (evaluator.py:1449)
+2025-12-15 16:20:16,528 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE SCHEMA IF NOT EXISTS "datastore"."sqlmesh__datamarketingclean" (base.py:2619)
+2025-12-15 16:20:16,530 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage BackfillStage (evaluator.py:123)
+2025-12-15 16:20:16,537 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Listing data objects in schema datastore.sqlmesh__datamarketingclean (evaluator.py:1616)
+2025-12-15 16:20:16,538 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,540 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,544 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT table_name AS name, table_schema AS schema, CASE table_type WHEN 'BASE TABLE' THEN 'table' WHEN 'VIEW' THEN 'view' WHEN 'LOCAL TEMPORARY' THEN 'table' END AS type FROM system.information_schema.tables WHERE (table_catalog = 'datastore' AND table_schema = 'sqlmesh__datamarketingclean') AND table_name IN ('datamarketingclean__customers__3099102196', 'datamarketingclean__transactions__170688214', 'datamarketingclean__events__77924244', 'datamarketingclean__campaigns__1630975039', 'datamarketingclean__products__4106562550') (base.py:2619)
+2025-12-15 16:20:16,563 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Listing data objects in schema datastore.sqlmesh__datamodelling (evaluator.py:1616)
+2025-12-15 16:20:16,563 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,564 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,567 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT table_name AS name, table_schema AS schema, CASE table_type WHEN 'BASE TABLE' THEN 'table' WHEN 'VIEW' THEN 'view' WHEN 'LOCAL TEMPORARY' THEN 'table' END AS type FROM system.information_schema.tables WHERE (table_catalog = 'datastore' AND table_schema = 'sqlmesh__datamodelling') AND table_name IN ('datamodelling__campaign_performance__3799549600') (base.py:2619)
+2025-12-15 16:20:16,579 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"datastore"."datamarketingclean"."campaigns": 2874723433> (evaluator.py:711)
+2025-12-15 16:20:16,580 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"datastore"."datamarketingclean"."campaigns": 2874723433> (evaluator.py:952)
+2025-12-15 16:20:16,586 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-12 00:00:00, 2025-12-15 00:00:00) into datastore.sqlmesh__datamarketingclean.datamarketingclean__campaigns__1630975039' (evaluator.py:984)
+2025-12-15 16:20:16,586 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ DESCRIBE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__campaigns__1630975039" (base.py:2619)
+2025-12-15 16:20:16,588 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,590 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT type FROM DUCKDB_DATABASES() WHERE database_name = 'datastore' (base.py:2619)
+2025-12-15 16:20:16,593 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE OR REPLACE TABLE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__campaigns__1630975039" AS SELECT "campaign_id" AS "campaign_id", "channel" AS "channel", "objective" AS "objective", "start_date" AS "start_date", "end_date" AS "end_date", "target_segment" AS "target_segment", "expected_uplift" AS "expected_uplift" FROM "datastore"."raw"."campaigns" AS "campaigns" WHERE NOT "campaign_id" IS NULL AND NOT "start_date" IS NULL (base.py:2619)
+2025-12-15 16:20:16,604 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-12 00:00:00, 2025-12-15 00:00:00) for snapshot SnapshotId<"datastore"."datamarketingclean"."campaigns": 2874723433> (facade.py:637)
+2025-12-15 16:20:16,604 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"datastore"."datamarketingclean"."campaigns": 2874723433> (interval.py:215)
+2025-12-15 16:20:16,630 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"datastore"."datamarketingclean"."customers": 2723737168> (evaluator.py:711)
+2025-12-15 16:20:16,630 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"datastore"."datamarketingclean"."customers": 2723737168> (evaluator.py:952)
+2025-12-15 16:20:16,637 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-12 00:00:00, 2025-12-15 00:00:00) into datastore.sqlmesh__datamarketingclean.datamarketingclean__customers__3099102196' (evaluator.py:984)
+2025-12-15 16:20:16,638 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ DESCRIBE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__customers__3099102196" (base.py:2619)
+2025-12-15 16:20:16,640 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,642 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT type FROM DUCKDB_DATABASES() WHERE database_name = 'datastore' (base.py:2619)
+2025-12-15 16:20:16,645 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE OR REPLACE TABLE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__customers__3099102196" AS SELECT "customer_id" AS "customer_id", "signup_date" AS "signup_date", "country" AS "country", "age" AS "age", "gender" AS "gender", "loyalty_tier" AS "loyalty_tier", "acquisition_channel" AS "acquisition_channel" FROM "datastore"."raw"."customers" AS "customers" WHERE NOT "customer_id" IS NULL AND NOT "signup_date" IS NULL AND "country" <> '' (base.py:2619)
+2025-12-15 16:20:16,788 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-12 00:00:00, 2025-12-15 00:00:00) for snapshot SnapshotId<"datastore"."datamarketingclean"."customers": 2723737168> (facade.py:637)
+2025-12-15 16:20:16,788 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"datastore"."datamarketingclean"."customers": 2723737168> (interval.py:215)
+2025-12-15 16:20:16,815 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"datastore"."datamarketingclean"."events": 1516395393> (evaluator.py:711)
+2025-12-15 16:20:16,816 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"datastore"."datamarketingclean"."events": 1516395393> (evaluator.py:952)
+2025-12-15 16:20:16,829 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-12 00:00:00, 2025-12-15 00:00:00) into datastore.sqlmesh__datamarketingclean.datamarketingclean__events__77924244' (evaluator.py:984)
+2025-12-15 16:20:16,830 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ DESCRIBE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__events__77924244" (base.py:2619)
+2025-12-15 16:20:16,834 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:16,837 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT type FROM DUCKDB_DATABASES() WHERE database_name = 'datastore' (base.py:2619)
+2025-12-15 16:20:16,842 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE OR REPLACE TABLE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__events__77924244" AS SELECT "event_id" AS "event_id", "timestamp" AS "timestamp", "customer_id" AS "customer_id", "session_id" AS "session_id", "event_type" AS "event_type", "product_id" AS "product_id", "device_type" AS "device_type", "traffic_source" AS "traffic_source", "campaign_id" AS "campaign_id", "page_category" AS "page_category", "session_duration_sec" AS "session_duration_sec", "experiment_group" AS "experiment_group" FROM "datastore"."raw"."events" AS "events" WHERE NOT "event_id" IS NULL AND NOT "timestamp" IS NULL AND NOT "customer_id" IS NULL AND NOT "event_type" IS NULL AND "event_type" <> '' (base.py:2619)
+2025-12-15 16:20:19,946 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-12 00:00:00, 2025-12-15 00:00:00) for snapshot SnapshotId<"datastore"."datamarketingclean"."events": 1516395393> (facade.py:637)
+2025-12-15 16:20:19,946 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"datastore"."datamarketingclean"."events": 1516395393> (interval.py:215)
+2025-12-15 16:20:19,981 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"datastore"."datamarketingclean"."products": 1878791345> (evaluator.py:711)
+2025-12-15 16:20:19,982 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"datastore"."datamarketingclean"."products": 1878791345> (evaluator.py:952)
+2025-12-15 16:20:19,990 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-12 00:00:00, 2025-12-15 00:00:00) into datastore.sqlmesh__datamarketingclean.datamarketingclean__products__4106562550' (evaluator.py:984)
+2025-12-15 16:20:19,991 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ DESCRIBE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__products__4106562550" (base.py:2619)
+2025-12-15 16:20:19,993 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:19,995 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT type FROM DUCKDB_DATABASES() WHERE database_name = 'datastore' (base.py:2619)
+2025-12-15 16:20:20,000 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE OR REPLACE TABLE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__products__4106562550" AS SELECT "product_id" AS "product_id", "category" AS "category", "brand" AS "brand", "base_price" AS "base_price", "launch_date" AS "launch_date", "is_premium" AS "is_premium" FROM "datastore"."raw"."products" AS "products" WHERE NOT "product_id" IS NULL AND NOT "category" IS NULL AND "category" <> '' AND NOT "brand" IS NULL AND "brand" <> '' (base.py:2619)
+2025-12-15 16:20:20,007 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-12 00:00:00, 2025-12-15 00:00:00) for snapshot SnapshotId<"datastore"."datamarketingclean"."products": 1878791345> (facade.py:637)
+2025-12-15 16:20:20,008 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"datastore"."datamarketingclean"."products": 1878791345> (interval.py:215)
+2025-12-15 16:20:20,035 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"datastore"."datamarketingclean"."transactions": 4274817729> (evaluator.py:711)
+2025-12-15 16:20:20,036 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"datastore"."datamarketingclean"."transactions": 4274817729> (evaluator.py:952)
+2025-12-15 16:20:20,045 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-12 00:00:00, 2025-12-15 00:00:00) into datastore.sqlmesh__datamarketingclean.datamarketingclean__transactions__170688214' (evaluator.py:984)
+2025-12-15 16:20:20,046 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ DESCRIBE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__transactions__170688214" (base.py:2619)
+2025-12-15 16:20:20,048 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:20,050 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT type FROM DUCKDB_DATABASES() WHERE database_name = 'datastore' (base.py:2619)
+2025-12-15 16:20:20,057 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE OR REPLACE TABLE "datastore"."sqlmesh__datamarketingclean"."datamarketingclean__transactions__170688214" AS SELECT "transaction_id" AS "transaction_id", "timestamp" AS "timestamp", "customer_id" AS "customer_id", "product_id" AS "product_id", "quantity" AS "quantity", "discount_applied" AS "discount_applied", "gross_revenue" AS "gross_revenue", "campaign_id" AS "campaign_id", "refund_flag" AS "refund_flag" FROM "datastore"."raw"."transactions" AS "transactions" WHERE NOT "transaction_id" IS NULL AND NOT "customer_id" IS NULL AND NOT "product_id" IS NULL AND NOT "gross_revenue" IS NULL (base.py:2619)
+2025-12-15 16:20:20,133 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-12-12 00:00:00, 2025-12-15 00:00:00) for snapshot SnapshotId<"datastore"."datamarketingclean"."transactions": 4274817729> (facade.py:637)
+2025-12-15 16:20:20,133 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"datastore"."datamarketingclean"."transactions": 4274817729> (interval.py:215)
+2025-12-15 16:20:20,159 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"datastore"."datamodelling"."campaign_performance": 205044459> (evaluator.py:711)
+2025-12-15 16:20:20,160 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"datastore"."datamodelling"."campaign_performance": 205044459> (evaluator.py:952)
+2025-12-15 16:20:20,170 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-12-12 00:00:00, 2025-12-15 00:00:00) into datastore.sqlmesh__datamodelling.datamodelling__campaign_performance__3799549600' (evaluator.py:984)
+2025-12-15 16:20:20,178 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ DESCRIBE "datastore"."sqlmesh__datamodelling"."datamodelling__campaign_performance__3799549600" (base.py:2619)
+2025-12-15 16:20:20,181 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT CURRENT_CATALOG() (base.py:2619)
+2025-12-15 16:20:20,183 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ SELECT type FROM DUCKDB_DATABASES() WHERE database_name = 'datastore' (base.py:2619)
+2025-12-15 16:20:20,189 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: c21246f8c09d4a1ba8be4b7194fb54fa */ CREATE OR REPLACE TABLE "datastore"."sqlmesh__datamodelling"."datamodelling__campaign_performance__3799549600" AS SELECT "c"."objective" AS "objective", "c"."channel" AS "channel", SUM("t"."gross_revenue" * (1 - "t"."discount_applied")) AS "total_net_revenue", COUNT(DISTINCT "t"."transaction_id") AS "total_transactions", AVG("t"."discount_applied") * 100 AS "avg_discount_rate_pct", (SUM("t"."refund_flag") * 1.0) / COUNT("t"."transaction_id") AS "refund_rate" FROM "datastore"."datamarketingseeds"."campaigns" AS "c" JOIN "datastore"."datamarketingseeds"."transactions" AS "t" ON "c"."campaign_id" = "t"."campaign_id" GROUP BY "c"."objective", "c"."channel" ORDER BY "total_net_revenue" DESC (base.py:2619)
+2025-12-15 16:20:20,202 - MainThread - sqlmesh.core.scheduler - INFO - Execution failed for node EvaluateNode(snapshot_name='"datastore"."datamodelling"."campaign_performance"', interval=(1765497600000, 1765756800000), batch_index=0) (scheduler.py:618)
+Traceback (most recent call last):
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\utils\concurrency.py", line 234, in sequential_apply_to_dag
+    fn(node)
+    ~~^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\scheduler.py", line 554, in run_node
+    audit_results = self.evaluate(
+        snapshot=snapshot,
+    ...<9 lines>...
+        selected_models=selected_models,
+    )
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\scheduler.py", line 229, in evaluate
+    wap_id = self.snapshot_evaluator.evaluate(
+        snapshot,
+    ...<9 lines>...
+        **kwargs,
+    )
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 186, in evaluate
+    result = self._evaluate_snapshot(
+        start=start,
+    ...<9 lines>...
+        **kwargs,
+    )
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 821, in _evaluate_snapshot
+    self._render_and_insert_snapshot(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        start=start,
+        ^^^^^^^^^^^^
+    ...<10 lines>...
+        batch_index=batch_index,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 1041, in _render_and_insert_snapshot
+    apply(query_or_df, index)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 990, in apply
+    evaluation_strategy.insert(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        table_name=target_table_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<12 lines>...
+        is_snapshot_deployable=is_snapshot_deployable,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 2418, in insert
+    self._replace_query_for_model(model, table_name, query_or_df, render_kwargs, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\snapshot\evaluator.py", line 2155, in _replace_query_for_model
+    self.adapter.replace_query(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        name,
+        ^^^^^
+    ...<10 lines>...
+        source_columns=source_columns,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\shared.py", line 318, in internal_wrapper
+    return func(*list_args, **kwargs)
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 524, in replace_query
+    return self._create_table_from_source_queries(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        target_table,
+        ^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 931, in _create_table_from_source_queries
+    self._create_table(
+    ~~~~~~~~~~~~~~~~~~^
+        schema if schema else table,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\duckdb.py", line 188, in _create_table
+    super()._create_table(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        table_name_or_schema,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 974, in _create_table
+    self.execute(
+    ~~~~~~~~~~~~^
+        self._build_create_table_exp(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        track_rows_processed=track_rows_processed,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 2596, in execute
+    self._execute(sql, track_rows_processed, **kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\engine_adapter\base.py", line 2628, in _execute
+    self.cursor.execute(sql, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+_duckdb.CatalogException: Catalog Error: Table with name campaigns does not exist!
+Did you mean "raw.campaigns"?
+
+LINE 1: ...") * 1.0) / COUNT("t"."transaction_id") AS "refund_rate" FROM "datastore"."datamarketingseeds"."campaigns" AS "c" JOIN...
+                                                                         ^
+
+The above exception was the direct cause of the following exception:
+
+sqlmesh.utils.concurrency.NodeExecutionFailedError: Execution failed for node EvaluateNode(snapshot_name='"datastore"."datamodelling"."campaign_performance"', interval=(1765497600000, 1765756800000), batch_index=0)
+2025-12-15 16:20:20,238 - MainThread - sqlmesh.core.context - INFO - Plan application failed. (context.py:1772)
+Traceback (most recent call last):
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\context.py", line 1764, in apply
+    self._apply(plan, circuit_breaker)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\context.py", line 2557, in _apply
+    self._scheduler.create_plan_evaluator(self).evaluate(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        plan.to_evaluatable(), circuit_breaker=circuit_breaker
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\plan\evaluator.py", line 105, in evaluate
+    self._evaluate_stages(plan_stages, plan)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\plan\evaluator.py", line 125, in _evaluate_stages
+    handler(stage, plan)
+    ~~~~~~~^^^^^^^^^^^^^
+  File "B:\GitHub Repository\Marketing-And-Ecommerce-ELT\.venv\Lib\site-packages\sqlmesh\core\plan\evaluator.py", line 264, in visit_backfill_stage
+    raise PlanError("Plan application failed.")
+sqlmesh.utils.errors.PlanError: Plan application failed.
+2025-12-15 16:20:20,375 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)

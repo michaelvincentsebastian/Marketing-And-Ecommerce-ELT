@@ -12,7 +12,7 @@ SELECT
   launch_date,
   is_premium
 FROM
-  datamarketingseeds.products
+  raw.products
 WHERE
   product_id IS NOT NULL -- Memastikan Kunci Utama ada
   AND category IS NOT NULL AND category <> '' -- Memastikan kategori ada dan bukan string kosong

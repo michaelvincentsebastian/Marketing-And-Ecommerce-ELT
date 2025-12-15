@@ -13,7 +13,7 @@ SELECT
   target_segment,
   expected_uplift
 FROM
-  datamarketingseeds.campaigns
+  raw.campaigns
 WHERE
   campaign_id IS NOT NULL -- Memastikan Kunci Utama ada
   AND start_date IS NOT NULL -- Memastikan tanggal mulai kampanye ada

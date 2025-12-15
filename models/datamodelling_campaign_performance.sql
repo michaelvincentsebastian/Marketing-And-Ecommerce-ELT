@@ -35,10 +35,10 @@ SELECT
 
 FROM
     -- Tabel Sumber 1: Kampanye
-    datamarketingseeds.campaigns c
+    datamarketingclean.campaigns c
 JOIN
     -- Tabel Sumber 2: Transaksi
-    datamarketingseeds.transactions t 
+    datamarketingclean.transactions t 
     -- Menggabungkan berdasarkan ID Kampanye yang sama
     ON c.campaign_id = t.campaign_id
 GROUP BY

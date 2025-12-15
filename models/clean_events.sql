@@ -18,7 +18,7 @@ SELECT
   session_duration_sec,
   experiment_group
 FROM
-  datamarketingseeds.events
+  raw.events
 WHERE
   event_id IS NOT NULL
   AND timestamp IS NOT NULL

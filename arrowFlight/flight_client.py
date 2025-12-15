@@ -8,7 +8,7 @@ import pyarrow.parquet as pq
 HOST = "localhost"
 PORT = 50051
 OUTPUT_DIR = "./arrowFlight/data/"
-OUTPUT_FILENAME = "cleanEvents.parquet"
+OUTPUT_FILENAME = "campaignPerformance.parquet"
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, OUTPUT_FILENAME)
 
 def run_client():
@@ -21,7 +21,7 @@ def run_client():
     print(f"[CLIENT] Terhubung ke Server Flight di {HOST}:{PORT}")
     
     # Kueri SQL yang dikirim (Hanya Skema dan Tabel, tanpa Katalog)
-    query = "SELECT * FROM datamarketingclean.events;" 
+    query = "SELECT * FROM datamodelling.campaign_performance;" 
     
     # 2. Buat Ticket dari kueri SQL
     ticket = fl.Ticket(query.encode())

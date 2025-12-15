@@ -15,7 +15,7 @@ SELECT
   campaign_id,
   refund_flag
 FROM
-  datamarketingseeds.transactions
+  raw.transactions
 WHERE
   transaction_id IS NOT NULL
   AND customer_id IS NOT NULL

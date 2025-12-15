@@ -9,7 +9,7 @@ import time # <-- IMPORT TIME
 HOST = "localhost"
 PORT = 50051
 # PATH DB: localdatabase.db
-LAKEHOUSE_FILE = r"B:\GitHub Repository\Marketing-And-Ecommerce-ELT\localdatabase.db" 
+LAKEHOUSE_FILE = r"B:\GitHub Repository\Marketing-And-Ecommerce-ELT\datastore.duckdb" 
 
 class DuckDBFlightServer(fl.FlightServerBase):
     def __init__(self, host, port, db_path):
