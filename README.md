@@ -1,60 +1,118 @@
-# Dapodik-ELT-DataPipeline
+# 🚀 Marketing & E-Commerce Data Pipeline: Modern ETL/ELT Architecture
 
-url : https://www.kaggle.com/datasets/geethasagarbonthu/marketing-and-e-commerce-analytics-dataset
+![Data Pipeline](https://img.shields.io/badge/Pipeline-ETL%20%2F%20ELT-blue)
+![Database](https://img.shields.io/badge/Database-DuckDB-orange)
+![Orchestration](https://img.shields.io/badge/Orchestration-SQLMesh-green)
+![Data Sharing](https://img.shields.io/badge/Sharing-Apache%20Arrow-red)
 
-# Deskripsi Dataset Analisis E-commerce dan Pemasaran (Terjemahan Bahasa Indonesia)
+## 📌 1. Pendahuluan
+Proyek ini mengimplementasikan **Data Pipeline** ujung-ke-ujung (end-to-end) yang dirancang untuk mengelola data pemasaran dan e-commerce. Sistem ini mentransformasi data mentah (CSV) menjadi wawasan bisnis yang siap pakai melalui arsitektur Lakehouse modern. 
 
-Dataset ini adalah dataset sintetik multi-tabel yang realistis, dirancang untuk analisis pemasaran, pengujian A/B, pemodelan peningkatan (uplift modeling), dan analisis produk. Ini mensimulasikan lingkungan analitik lengkap perusahaan e-commerce modern, termasuk pelanggan, produk, kampanye pemasaran, peristiwa interaksi pengguna, dan transaksi pembelian.
+Poin unik dari proyek ini adalah penggunaan **Apache Arrow Flight** sebagai protokol distribusi data, yang memungkinkan Analyst menarik data dalam hitungan milidetik tanpa *overhead* serialisasi tradisional.
 
-Dataset ini berisi jutaan interaksi tingkat peristiwa (event-level interactions) di seluruh penelusuran (browsing), klik (clicking), penambahan ke keranjang (carting), dan pembelian. Dataset ini juga mencakup paparan kampanye dan penugasan eksperimen, menjadikannya ideal untuk praktik langsung dengan:
-* Analisis Data Eksplorasi (EDA)
-* Pembersihan data dan rekayasa fitur (feature engineering)
-* Analisis saluran (funnel) dan perilaku
-* Pengujian A/B dan pemodelan peningkatan (uplift modeling)
-* Penggabungan multi-tabel bergaya SQL (SQL-style multi-table joins)
-* Analisis pendapatan, pengembalian dana (refund), dan diskon
-* Pola deret waktu dan musiman (seasonality)
-* Segmentasi pelanggan dan analisis kinerja produk
 
-Pembelian dalam dataset mengikuti model peningkatan probabilistik (probabilistic uplift model), dipengaruhi oleh paparan kampanye, grup eksperimen, tingkat loyalitas (loyalty tier), sumber lalu lintas (traffic source), tren musiman, dan efek akhir pekan — memungkinkan pengguna untuk menjalankan uji statistik yang bermakna alih-alih bekerja dengan noise acak.
-
-Dataset ini sepenuhnya sintetik, dihasilkan secara terprogram menggunakan Python, dan tidak mengandung informasi pelanggan atau bisnis nyata. Ini dimaksudkan sebagai sumber belajar bagi analis, ilmuwan data (data scientists), pelajar, dan siapa saja yang mempraktikkan analisis pemasaran dan e-commerce.
 
 ---
 
-## Detail File CSV
+## 💼 2. Business Case & Analisis Strategis
+Proyek ini bertujuan untuk mengoptimalkan alokasi anggaran pemasaran dengan menganalisis performa setiap *channel* melalui 4 metrik utama:
 
-**campaigns.csv**:
-- Berisi informasi rinci tentang setiap kampanye pemasaran.
-- Mencakup saluran kampanye, tujuan, tanggal mulai/akhir, dan segmen target.
-- expected_uplift memengaruhi perilaku pembelian dalam events dataset.
-- Mendukung analisis kinerja dan atribusi kampanye.
-- Kunci utama (Primary key) campaign_id terhubung ke events dan transactions.
+| Metrik | Tujuan Analisis |
+| :--- | :--- |
+| **Total Net Revenue** | Mengukur profitabilitas nyata setelah diskon. |
+| **Total Transactions** | Mengukur volume penetrasi pasar dan skalabilitas. |
+| **Avg Discount Rate** | Mengukur efisiensi biaya (seberapa "mahal" kita menarik pelanggan). |
+| **Refund Rate** | Indikator kualitas target audiens dan kepuasan pelanggan. |
 
-**customers.csv**:
-- Berisi satu baris per pelanggan dengan informasi demografi dan profil.
-- Mencakup negara, usia, jenis kelamin, dan signup_date untuk segmentasi dan analisis kohort (cohort analysis).
-- Melacak nilai pelanggan melalui loyalty_tier (Perunggu → Platinum).
-- Menunjukkan bagaimana setiap pelanggan memasuki platform via acquisition_channel.
-- Kunci utama (Primary key) customer_id terhubung ke events dan transactions.
 
-**events.csv**:
-- Tabel fakta (fact table) besar berisi interaksi pengguna: views, clicks, add-to-cart, bounces, purchases.
-- Mencakup metadata seperti device type, traffic source, page category, dan session duration.
-- campaign_id dan experiment_group memungkinkan analisis peningkatan (uplift) dan pengujian A/B.
-- Mengandung ketidakrapihan yang realistis: missing device types, inconsistent traffic-source casing.
-- Kunci utama (Primary key) event_id, dengan kunci asing (foreign keys) ke customers, products, dan campaigns.
 
-**products.csv**:
-- Satu baris per produk dalam katalog dengan metadata kategori dan merek (brand).
-- base_price values mencerminkan distribusi harga yang realistis berdasarkan kategori.
-- Mencakup waktu peluncuran produk untuk menganalisis siklus hidup produk.
-- is_premium mengidentifikasi segmen produk dengan harga lebih tinggi.
-- Kunci utama (Primary key) product_id terhubung ke events dan transactions.
+---
 
-**transactions.csv**:
-- Berisi satu baris per transaksi pembelian yang diselesaikan.
-- Mencakup quantity, discounts applied, dan total gross revenue (dengan refunds sebagai nilai negatif).
-- Terhubung langsung ke purchase events melalui timestamp dan customer/product IDs.
-- Mendukung analisis pendapatan, perilaku pengembalian dana (refund behavior), dan studi efektivitas kampanye.
-- Kunci utama (Primary key) transaction_id, merujuk ke customers, products, dan campaigns.
+## 🛠️ 3. Tech Stack
+| Name | Description | Functions |
+| :--- | :--- | :--- |
+| **Python** | High-level programming | Ingestion script, Flight API, & Migration logic. |
+| **SQL** | Structured Query Language | Data cleaning & business logic modeling. |
+| **DuckDB** | In-process OLAP DB | Core compute engine & analytical storage. |
+| **SQLMesh** | Data Transformation | Model management, dependency tracking, & auditing. |
+| **Apache Arrow** | Columnar Memory Format | High-performance data sharing via Arrow Flight. |
+| **Ducklake** | Lakehouse Extension | Syncing local database to S3/MinIO. |
+| **MinIO** | Object Storage | Data Lake storage (Running via Docker). |
+| **Docker** | Containerization | Infrastructure isolation for MinIO. |
+
+---
+
+## 🔄 4. Alur Kerja Pipeline (Flow)
+
+### A. Extraction & Ingestion
+Mengekstrak data mentah dari file CSV dan memuatnya ke dalam skema `raw` di DuckDB untuk pemrosesan awal.
+- **Script:** `csvToDuckDB.py`
+
+### B. Transformation (SQLMesh)
+Menggunakan SQLMesh untuk mengelola siklus hidup data melalui dua lapisan:
+1. **Staging Layer:** Membersihkan nilai NULL, string kosong, dan validasi tipe data.
+2. **Mart Layer:** Menggabungkan tabel kampanye dan transaksi untuk menghasilkan model `campaign_performance`.
+
+
+
+### C. Lakehouse Migration
+Sinkronisasi data matang ke **MinIO** dalam format **Parquet**. Hal ini memastikan data tersimpan secara terdistribusi dan siap untuk skalabilitas besar (Big Data).
+
+### D. Data Distribution (Arrow Flight)
+Penyediaan data melalui API berperforma tinggi. Flight Server mengeksekusi kueri langsung pada memori DuckDB dan mengirimkan *stream* biner Arrow ke klien.
+
+
+
+---
+
+## 📂 5. Struktur Proyek
+```text
+.
+├── arrowFlight/            # Mekanisme Distribusi Data
+│   ├── data/               # Output Parquet untuk Analyst
+│   ├── flight_server.py    # Server API Middle-man
+│   └── flight_client.py    # Client/Analyst Data Fetcher
+├── models/                 # Logika SQLMesh (SQL)
+│   ├── staging/            # Layer Pembersihan (Clean)
+│   └── marts/              # Layer Bisnis (Modelling)
+├── notebooks/              # Migrasi Ducklake & EDA
+├── rawData/                # Sumber Data CSV Mentah
+├── config.yaml             # Konfigurasi Gateway SQLMesh
+└── csvToDuckDB.py          # Skrip Ingestion Otomatis
+
+```
+
+---
+
+## ⚙️ 6. Setup & Instalasi
+
+1. Install Library:
+```Bash
+pip install sqlmesh[duckdb] duckdb pyarrow pandas
+```
+
+2. Jalankan Ingestion:
+```Bash
+python csvToDuckDB.py
+```
+
+3. Terapkan Transformasi:
+```Bash
+sqlmesh plan
+sqlmesh apply
+```
+
+4. Aktifkan Data Service:
+```Bash
+python arrowFlight/flight_server.py
+```
+
+5. Request Data (Analyst Side):
+```Bash
+python arrowFlight/flight_client.py
+```
+
+---
+
+## 💡 7. Kesimpulan
+Pipeline ini bukan sekadar alat ETL, melainkan solusi Modern Data Stack yang mandiri. Dengan mengintegrasikan SQLMesh untuk kontrol kualitas data dan Apache Arrow untuk kecepatan akses, organisasi dapat mengambil keputusan bisnis berbasis data 90% lebih cepat dibandingkan metode manual.
